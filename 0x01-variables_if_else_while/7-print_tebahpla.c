@@ -1,15 +1,20 @@
-nclude <stdio.h>
+#include <stdio.h>
 
-int main(void) {
-    char str[] = "alphabet"; 
-    int length = strlen(str);
-    int i;
+/**
+  * main - Prints the alphabet at reverse
+  *
+  * Return: Always (Success)
+  */
+int main(void)
+{
+	char c;
 
-    for (i = length - 1; i >= 0; i--) {
-        putchar(str[i]);
-    }
+	for (c = 'z'; c >= 'a'; c--)
+	{
+		putchar(c);
+	}
 
-    putchar("\n");
+	putchar('\n');
 
-    return 0;
+	return (0);
 }

@@ -1,15 +1,22 @@
 #include <stdio.h>
+/**
+  * main - Prints some letters of alphabet
+  *
+  * Return: Always (Success)
+  */
+int main(void)
+{
+	char c;
 
-int main () {
-   char i;
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
+	}
 
-   for(i = 'a' ; i<= 'z' ; i++) {
-        if (i == 'e' || i == 'q') {
-            continue; 
-        }
-      putchar(i);
-      putchar('\n');
-   }
+	putchar('\n');
 
-   return(0);
+	return (0);
 }

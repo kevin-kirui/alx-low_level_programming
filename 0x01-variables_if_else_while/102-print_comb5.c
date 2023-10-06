@@ -1,9 +1,46 @@
-#include <stdio.h>
+include <stdio.h>
 
-int main(void) {
-    for (int a = 0; a <= 99; a++)
-        for (int b = b + 1; b <= 99; b++)
-            printf("%02d %02d%c", a, b, (a == 98 && b == 99) ? '\n' : ',');
+/**
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
+int main(void)
+{
+	int c, i, k, j;
 
-    return 0;
+	for (c = 48; c <= 57; c++)
+	{
+		for (i = 48; i <= 57; i++)
+		{
+			for (k = 48; k <= 57; k++)
+			{
+				for (j = 48; j <= 57; j++)
+				{
+					if (((k + j) > (c + i) &&  k >= c) || c < k)
+					{
+						putchar(c);
+						putchar(i);
+						putchar(' ');
+						putchar(k);
+						putchar(j);
+
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+					}
+				}
+			}
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }
