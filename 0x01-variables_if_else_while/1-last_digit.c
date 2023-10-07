@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Prints a text according number
@@ -22,7 +23,7 @@ int main(void)
 	}
 	else if (lastd == 0)
 	{
-		printf("Last digit of %d is %e and is 0.\n", n, lastd);
+		printf("Last digit of %d is %d and is 0.\n", n, lastd);
 	}
 	else if (lastd < 6 && lastd != 0)
 	{
