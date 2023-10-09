@@ -20,11 +20,11 @@ int main(void)
 		putchar('0' + (b % 10));
 		if (!(a == 98 && b == 99))
 		{
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	}
-	putchar("\n");
-	return(0);
+		putchar ("\n");
+		return (0);
 }	
