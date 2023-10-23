@@ -2,24 +2,21 @@
 #include <stdio.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
- */
-
-int main() 
+  * _memset - Fill memory with a constant byte
+  * @s: memory area to fill
+  * @b: constant byte to fill
+  * @n: bytes of memory area to fill
+  *
+  * Return: the memory area filled
+  */
+char *_memset(char *s, char b, unsigned int n)
 {
-  char str[50] = "Welcome to the linuxhint.";
-  
-  for (int i = 0; i <= 25; i++) 
-  {
-	  memset(str + 13, '.', 8*sizeof(char)); 
-	  putchar("After memset():  %c", str);;
+	unsigned int a;
 
-  }
+	for (a = 0; a < n; a++)
+	{
+		s[a] = b;
+	}
 
-  return 0;
-
+	return (s);
 }
