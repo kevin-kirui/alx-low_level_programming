@@ -16,7 +16,7 @@ int main()
   for (int i = 0; i <= 25; i++) 
   {
 	  memset(str + 13, '.', 8*sizeof(char)); 
-	  putchar(str[i]);
+	  putchar("After memset():  %c", str);;
 
   }
 
