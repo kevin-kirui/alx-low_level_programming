@@ -3,8 +3,8 @@
 
 /**
   * free_grid -gird memory freed
-  * @g:grid 
-  * @h:height
+  * @grid:... 
+  * @height:...
   *
   * Return: 1
   */
