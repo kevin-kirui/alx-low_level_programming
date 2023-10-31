@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
- *free_grid-gird memory freed
- *@grid:... 
- *@height:...
+ * free_grid-gird memory freed
+ *
+ * @grid:...
+ * @height:...
  *
  *Return: 1
  */
