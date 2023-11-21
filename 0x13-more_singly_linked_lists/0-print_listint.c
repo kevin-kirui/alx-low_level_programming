@@ -6,8 +6,6 @@
   *
   * Return: The number of nodes of the linked list
   */
-int main(void)
-{
 size_t print_listint(const listint_t *h)
 {
 	int count = 0;
@@ -24,4 +22,4 @@ size_t print_listint(const listint_t *h)
 
 	return (count);
 }
-}
+
